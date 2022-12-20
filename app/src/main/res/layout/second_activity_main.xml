@@ -6,13 +6,14 @@
     android:layout_height="match_parent">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
         android:layout_width="416dp"
         android:layout_height="395dp"
         android:backgroundTint="#DEEAD8"
+        app:cardCornerRadius="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:cardCornerRadius="40dp">
+        app:layout_constraintTop_toTopOf="parent">
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -83,8 +84,8 @@
                 android:id="@+id/textView13"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:text="Monstera Adansonii"
                 android:layout_marginStart="16dp"
+                android:text="Monstera Adansonii"
                 android:textColor="#000000"
                 android:textSize="35sp"
                 android:textStyle="bold"
@@ -129,8 +130,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
-                android:text="SIZE"
                 android:layout_marginTop="50dp"
+                android:text="SIZE"
                 android:textColor="#686767"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView16" />
@@ -157,19 +158,247 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/like_button_j"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
             <View
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="15dp"
                 android:background="@drawable/like_button"
-                android:layout_marginLeft="30dp"
                 android:backgroundTint="#0D986A"
+                app:layout_constraintStart_toEndOf="@+id/view"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/shop_icon_wh"
                 app:layout_constraintStart_toEndOf="@+id/view"
                 app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Overview"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView5" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView19">
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="300dp"
+            android:src="@drawable/sun_new"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="5dp"
+            android:text="Light"
+            android:textAllCaps="true"
+            android:textColor="#2C2A2A"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="5dp"
+            android:text="35-40%"
+            android:textAllCaps="true"
+            android:textColor="#00811D"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/temp_new"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Temperature"
+            android:textAllCaps="true"
+            android:textColor="#2C2A2A"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="70-75 F"
+            android:textAllCaps="true"
+            android:textColor="#00811D"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="300dp"
+            android:src="@drawable/water_new"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:text="Water"
+            android:textAllCaps="true"
+            android:textColor="#2C2A2A"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:text="250ml"
+            android:textColor="#00811D"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:text="About"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/about"
+        android:textColor="#3A3A3A"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/order_button"
+        app:layout_constraintTop_toBottomOf="@+id/textView28"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/shop_icon_wh"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view3" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        android:text="View 3 items"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView23"
+        app:layout_constraintTop_toTopOf="@+id/view3" />
+
+    <ImageView
+        android:id="@+id/imageView99"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/price"
+        app:layout_constraintEnd_toStartOf="@+id/textView99"
+        app:layout_constraintTop_toTopOf="@+id/view3" />
+
+    <TextView
+        android:id="@+id/textView99"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="400"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/view3"
+        app:layout_constraintTop_toTopOf="@+id/view3" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
